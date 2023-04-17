@@ -42,13 +42,14 @@ public class RingProcessor {
 
 
     // Computation of the average traversing time.
-    private long averageTime() {
-
+    private long averageTime(long startTime) {
+        System.out.println("Average traversing Time: " + (System.currentTimeMillis()- startTime));
         return 0;
     }
 
 
     //initialize ring
+
     private void init() {
         nodeList = new ArrayList<Node>();
         int coordinator = (int) (Math.random() * nodesAmount);
@@ -90,5 +91,6 @@ public class RingProcessor {
         }
 
     }
+
 
 }
